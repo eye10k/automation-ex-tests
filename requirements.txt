@@ -1,5 +1,7 @@
 pytest
 pytest-playwright
+playwright
+uuid
 requests
 pytest-html
 allure-pytest
