@@ -17,7 +17,7 @@ class Logger():
         LOG_PATH = os.path.join(BASE_DIR, "..", "logs", "log")  # Navigate to conf.ini
 
         #self.LogFileName = 'Logs\\log' + curr_time + '.txt'
-        self.LogFileName = LOG_PATH + curr_time + '.txt'
+        self.LogFileName = f"{LOG_PATH}.{curr_time}.txt"
         # "a" to append the logs in same file, "w" to generate new logs and delete old one
         fh = logging.FileHandler(self.LogFileName, mode="a")
         fh.setFormatter(fmt)
