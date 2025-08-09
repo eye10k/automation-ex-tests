@@ -39,7 +39,6 @@ def test_register_user():
     assert response.json()['message'] == "User created!"
     assert response.status_code == 200, "Expected status code to be 200"
 
-    # Запрашиваем созданного юзера по email
     get_url = f"https://automationexercise.com/api/getUserDetailByEmail?email={email}"
     get_response = requests.get(get_url)
     get_data = get_response.json()

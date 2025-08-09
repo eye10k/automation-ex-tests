@@ -3,16 +3,16 @@ from tabnanny import check
 import pytest
 import allure
 import uuid
-from Models.User import User
+from models.user import User
 from pages.home_page import HomePage
 from pages.signup_page import SignupPage
-from pages.Shopping_Cart import ShoppingCart
-from pages.login_page import Login_Page
-from pages.acc_created import AccCreated
-from pages.checkout_page import checkout
-from pages.payment_page import payment
-from pages.payment_done import PaymentDone
-from pages.deleteacc_page import DeleteAcc
+from pages.shopping_cart import ShoppingCartPage
+from pages.login_page import LoginPage
+from pages.acc_created import AccCreatedPage
+from pages.checkout_page import Сheckout
+from pages.payment_page import PaymentPage
+from pages.payment_done import PaymentDonePage
+from pages.deleteacc_page import DeleteAccPage
 from tests.BaseTest import BaseTest
 
 
@@ -30,12 +30,12 @@ class TestAddToCart(BaseTest):
             home_page.add_product_to_cart()
             home_page.go_to_cart()
 
-            cart_page = ShoppingCart(page)
+            cart_page = ShoppingCartPage(page)
             cart_page.verify_shopping_cart_displayed()
             cart_page.click_to_checkout()
             cart_page.click_to_Register()
 
-            login_page = Login_Page(page)
+            login_page = LoginPage(page)
             login_page.fill_name("Toby")
             login_page.fill_email(f"{uuid.uuid4()}@example.com")
             login_page.click_Signup()
@@ -59,7 +59,7 @@ class TestAddToCart(BaseTest):
             singup_page.enter_acc_details(user)
 
 
-            acc_created = AccCreated(page)
+            acc_created = AccCreatedPage(page)
             acc_created.verify_acc_created()
 
             home_page.click_cart_button()
@@ -70,16 +70,16 @@ class TestAddToCart(BaseTest):
             checkout_page.fill_checkout_details(page)
             checkout_page.place_order()
 
-            payment_page = payment(page)
-            payment_page.payment()
+            payment_page = PaymentPage(page)
+            payment_page.fill_payment_form()
 
 
-            payment_done = PaymentDone(page)
+            payment_done = PaymentDonePage(page)
             payment_done.payment_done_message()
             payment_done.delete_acc()
 
 
-            delete_acc = DeleteAcc(page)
+            delete_acc = DeleteAccPage(page)
             delete_acc.check_delete_message()
             delete_acc.click_continue()
 

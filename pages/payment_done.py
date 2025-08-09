@@ -1,13 +1,14 @@
-from pages.BasePage import BasePage
-from utilities import configReader
+from pages.base_page import BasePage
 
-class PaymentDone(BasePage):
+class PaymentDonePage(BasePage):
+    order_confirmed_msg_XPATH = "//p[text()='Congratulations! Your order has been confirmed!']"
+    delete_account_btn_CSS = 'a[href="/delete_account"]'
+
     def __init__(self, page):
         super().__init__(page)
 
-
     def payment_done_message(self):
-        assert self.get_text("payment_done_title_XPATH") == "Congratulations! Your order has been confirmed!"
+        assert self.get_text(self.order_confirmed_msg_XPATH) == "Congratulations! Your order has been confirmed!"
 
     def delete_acc(self):
-        self.click("delete_account_XPATH")
+        self.click(self.delete_account_btn_CSS)

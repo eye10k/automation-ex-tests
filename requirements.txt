@@ -5,3 +5,5 @@ uuid
 requests
 pytest-html
 allure-pytest
+behave
+allure-behave

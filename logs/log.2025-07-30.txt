@@ -1,0 +1,84 @@
+2025-07-30 13:43:44,260 - BasePage.py:[30] - [INFO] - Moving to an Element product_XPATH
+2025-07-30 13:43:44,297 - BasePage.py:[20] - [INFO] - Clicking on product_XPATH
+2025-07-30 13:43:44,908 - BasePage.py:[20] - [INFO] - Clicking on cart_XPATH
+2025-07-30 13:43:44,963 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-30 13:43:45,244 - BasePage.py:[20] - [INFO] - Clicking on register_XPATH
+2025-07-30 13:43:45,266 - BasePage.py:[25] - [INFO] - Typing on name_XPATH and entered Toby
+2025-07-30 13:43:45,282 - BasePage.py:[25] - [INFO] - Typing on email_signup_XPATH and entered 2bd21aec-3a18-4519-a84d-f37499b15f11@example.com
+2025-07-30 13:43:45,568 - BasePage.py:[20] - [INFO] - Clicking on signup_XPATH
+2025-07-30 13:43:45,620 - BasePage.py:[20] - [INFO] - Clicking on title_XPATH
+2025-07-30 13:43:45,633 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-30 13:43:45,687 - BasePage.py:[25] - [INFO] - Typing on sign_password_XPATH and entered automation123!
+2025-07-30 13:43:45,703 - BasePage.py:[36] - [INFO] - Selected 1 from sing_day_XPATH
+2025-07-30 13:43:45,713 - BasePage.py:[36] - [INFO] - Selected 1 from sing_month_XPATH
+2025-07-30 13:43:45,721 - BasePage.py:[36] - [INFO] - Selected 1990 from sing_year_XPATH
+2025-07-30 13:43:45,736 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-30 13:43:45,753 - BasePage.py:[25] - [INFO] - Typing on last_name_XPATH and entered Styd
+2025-07-30 13:43:45,774 - BasePage.py:[25] - [INFO] - Typing on company_XPATH and entered Test ARLOYS
+2025-07-30 13:43:45,793 - BasePage.py:[25] - [INFO] - Typing on address_XPATH and entered 123 Rodeo Drive
+2025-07-30 13:43:45,810 - BasePage.py:[25] - [INFO] - Typing on address2_XPATH and entered 122 Rodeo Drive1
+2025-07-30 13:43:45,824 - BasePage.py:[36] - [INFO] - Selected United States from country_XPATH
+2025-07-30 13:43:45,842 - BasePage.py:[25] - [INFO] - Typing on state_XPATH and entered California
+2025-07-30 13:43:45,862 - BasePage.py:[25] - [INFO] - Typing on city_XPATH and entered San Francisco
+2025-07-30 13:43:45,877 - BasePage.py:[25] - [INFO] - Typing on zipcode_XPATH and entered 12345
+2025-07-30 13:43:45,892 - BasePage.py:[25] - [INFO] - Typing on mobile_XPATH and entered +1234567890
+2025-07-30 13:43:46,545 - BasePage.py:[20] - [INFO] - Clicking on create_account_XPATH
+2025-07-30 13:43:52,505 - BasePage.py:[20] - [INFO] - Clicking on continue_XPATH
+2025-07-30 13:45:16,149 - BasePage.py:[30] - [INFO] - Moving to an Element product_XPATH
+2025-07-30 13:45:16,183 - BasePage.py:[20] - [INFO] - Clicking on product_XPATH
+2025-07-30 13:45:16,913 - BasePage.py:[20] - [INFO] - Clicking on cart_XPATH
+2025-07-30 13:45:16,958 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-30 13:45:17,238 - BasePage.py:[20] - [INFO] - Clicking on register_XPATH
+2025-07-30 13:45:17,273 - BasePage.py:[25] - [INFO] - Typing on name_XPATH and entered Toby
+2025-07-30 13:45:17,293 - BasePage.py:[25] - [INFO] - Typing on email_signup_XPATH and entered d2b19adc-f400-444e-a686-c84e1bf60b65@example.com
+2025-07-30 13:45:17,662 - BasePage.py:[20] - [INFO] - Clicking on signup_XPATH
+2025-07-30 13:45:17,724 - BasePage.py:[20] - [INFO] - Clicking on title_XPATH
+2025-07-30 13:45:17,738 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-30 13:45:17,807 - BasePage.py:[25] - [INFO] - Typing on sign_password_XPATH and entered automation123!
+2025-07-30 13:45:17,821 - BasePage.py:[36] - [INFO] - Selected 1 from sing_day_XPATH
+2025-07-30 13:45:17,833 - BasePage.py:[36] - [INFO] - Selected 1 from sing_month_XPATH
+2025-07-30 13:45:17,847 - BasePage.py:[36] - [INFO] - Selected 1990 from sing_year_XPATH
+2025-07-30 13:45:17,863 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-30 13:45:17,882 - BasePage.py:[25] - [INFO] - Typing on last_name_XPATH and entered Styd
+2025-07-30 13:45:17,899 - BasePage.py:[25] - [INFO] - Typing on company_XPATH and entered Test ARLOYS
+2025-07-30 13:45:17,917 - BasePage.py:[25] - [INFO] - Typing on address_XPATH and entered 123 Rodeo Drive
+2025-07-30 13:45:17,932 - BasePage.py:[25] - [INFO] - Typing on address2_XPATH and entered 122 Rodeo Drive1
+2025-07-30 13:45:17,953 - BasePage.py:[36] - [INFO] - Selected United States from country_XPATH
+2025-07-30 13:45:17,966 - BasePage.py:[25] - [INFO] - Typing on state_XPATH and entered California
+2025-07-30 13:45:17,987 - BasePage.py:[25] - [INFO] - Typing on city_XPATH and entered San Francisco
+2025-07-30 13:45:18,003 - BasePage.py:[25] - [INFO] - Typing on zipcode_XPATH and entered 12345
+2025-07-30 13:45:18,019 - BasePage.py:[25] - [INFO] - Typing on mobile_XPATH and entered +1234567890
+2025-07-30 13:45:18,738 - BasePage.py:[20] - [INFO] - Clicking on create_account_XPATH
+2025-07-30 13:45:24,635 - BasePage.py:[20] - [INFO] - Clicking on continue_XPATH
+2025-07-30 17:00:20,447 - BasePage.py:[30] - [INFO] - Moving to an Element product_XPATH
+2025-07-30 17:00:20,489 - BasePage.py:[20] - [INFO] - Clicking on product_XPATH
+2025-07-30 17:00:21,154 - BasePage.py:[20] - [INFO] - Clicking on cart_XPATH
+2025-07-30 17:00:21,224 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-30 17:00:21,520 - BasePage.py:[20] - [INFO] - Clicking on register_XPATH
+2025-07-30 17:00:21,551 - BasePage.py:[25] - [INFO] - Typing on name_XPATH and entered Toby
+2025-07-30 17:00:21,570 - BasePage.py:[25] - [INFO] - Typing on email_signup_XPATH and entered fd9f5a61-d989-4cf0-a63a-dca1aecd4194@example.com
+2025-07-30 17:00:21,876 - BasePage.py:[20] - [INFO] - Clicking on signup_XPATH
+2025-07-30 17:00:21,944 - BasePage.py:[20] - [INFO] - Clicking on title_XPATH
+2025-07-30 17:00:21,955 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-30 17:00:21,975 - BasePage.py:[25] - [INFO] - Typing on sign_password_XPATH and entered automation123!
+2025-07-30 17:00:22,039 - BasePage.py:[36] - [INFO] - Selected 1 from sing_day_XPATH
+2025-07-30 17:00:22,052 - BasePage.py:[36] - [INFO] - Selected 1 from sing_month_XPATH
+2025-07-30 17:00:22,063 - BasePage.py:[36] - [INFO] - Selected 1990 from sing_year_XPATH
+2025-07-30 17:00:22,074 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-30 17:00:22,118 - BasePage.py:[25] - [INFO] - Typing on last_name_XPATH and entered Styd
+2025-07-30 17:00:22,140 - BasePage.py:[25] - [INFO] - Typing on company_XPATH and entered Test ARLOYS
+2025-07-30 17:00:22,167 - BasePage.py:[25] - [INFO] - Typing on address_XPATH and entered 123 Rodeo Drive
+2025-07-30 17:00:22,193 - BasePage.py:[25] - [INFO] - Typing on address2_XPATH and entered 122 Rodeo Drive1
+2025-07-30 17:00:22,210 - BasePage.py:[36] - [INFO] - Selected United States from country_XPATH
+2025-07-30 17:00:22,230 - BasePage.py:[25] - [INFO] - Typing on state_XPATH and entered California
+2025-07-30 17:00:22,245 - BasePage.py:[25] - [INFO] - Typing on city_XPATH and entered San Francisco
+2025-07-30 17:00:22,263 - BasePage.py:[25] - [INFO] - Typing on zipcode_XPATH and entered 12345
+2025-07-30 17:00:22,284 - BasePage.py:[25] - [INFO] - Typing on mobile_XPATH and entered +1234567890
+2025-07-30 17:00:22,971 - BasePage.py:[20] - [INFO] - Clicking on create_account_XPATH
+2025-07-30 17:00:28,898 - BasePage.py:[20] - [INFO] - Clicking on continue_XPATH
+2025-07-30 17:00:30,068 - BasePage.py:[20] - [INFO] - Clicking on cart_button_XPATH
+2025-07-30 17:00:30,533 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-30 17:00:30,682 - BasePage.py:[48] - [INFO] - Text of checkout_fullname_XPATH: Mr. Toby Styd
+2025-07-30 17:00:30,691 - BasePage.py:[48] - [INFO] - Text of checkout_phone_XPATH: +1234567890
+2025-07-30 17:00:31,316 - BasePage.py:[20] - [INFO] - Clicking on checkout_message_XPATH
+2025-07-30 17:00:31,788 - BasePage.py:[20] - [INFO] - Clicking on checkout_place_order_XPATH

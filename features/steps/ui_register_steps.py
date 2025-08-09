@@ -1,15 +1,17 @@
-from behave import when, then
+from behave import *
 import allure
 import uuid
+
+from models.PaymentCard import PaymentCard
 from models.user import User
 from pages.signup_page import SignupPage
-from pages.Shopping_Cart import ShoppingCart
-from pages.login_page import Login_Page
-from pages.acc_created import AccCreated
-from pages.checkout_page import checkout
-from pages.payment_page import payment
-from pages.payment_done import PaymentDone
-from pages.deleteacc_page import DeleteAcc
+from pages.shopping_cart import ShoppingCartPage
+from pages.login_page import LoginPage
+from pages.acc_created import AccCreatedPage
+from pages.checkout_page import CheckoutPage
+from pages.payment_page import PaymentPage
+from pages.payment_done import PaymentDonePage
+from pages.deleteacc_page import DeleteAccPage
 
 
 @when("I add products to my cart")
@@ -27,7 +29,7 @@ def step_click_cart_button(context):
 @then("I should see my cart")
 def step_verify_cart_page(context):
     with allure.step("I should see my cart"):
-        context.cart_page = ShoppingCart(context.page)
+        context.cart_page = ShoppingCartPage(context.page)
         context.cart_page.verify_shopping_cart_displayed()
 
 
@@ -46,7 +48,7 @@ def step_click_register_login(context):
 @when("I sign up and create my account")
 def step_fill_signup_form(context):
     with allure.step("I sign up and create my account"):
-        context.login_page = Login_Page(context.page)
+        context.login_page = LoginPage(context.page)
         context.login_page.fill_name("Toby")
         context.login_page.fill_email(f"{uuid.uuid4()}@example.com")
         context.login_page.click_Signup()
@@ -74,7 +76,7 @@ def step_fill_signup_form(context):
 @then('I should see the message "ACCOUNT CREATED!"')
 def step_verify_account_created(context):
     with allure.step("I should see the message 'ACCOUNT CREATED!'"):
-        context.acc_created = AccCreated(context.page)
+        context.acc_created = AccCreatedPage(context.page)
         context.acc_created.verify_acc_created()
 
 
@@ -105,7 +107,7 @@ def step_confirm_checkout(context):
 @then("I should see my address and order details")
 def step_verify_checkout_page(context):
     with allure.step("I should see my address and order details"):
-        context.checkout_page = checkout(context.page)
+        context.checkout_page = CheckoutPage(context.page)
         context.checkout_page.verify_checkout_page(context.user)
 
 
@@ -119,8 +121,15 @@ def step_comment_and_place_order(context):
 @when("I provide my payment details")
 def step_provide_payment_details(context):
     with allure.step("I provide my payment details"):
-        context.payment_page = payment(context.page)
-        context.payment_page.payment()
+        context.payment_page = PaymentPage(context.page)
+        paymentCard = PaymentCard(
+            "Test Card",
+            "1234 5678 9012 3456",
+            "12",
+            "2028",
+            "123"
+        )
+        context.payment_page.fill_payment_form(paymentCard)
 
 
 @when("I confirm the payment")
@@ -132,7 +141,7 @@ def step_confirm_payment(context):
 @then('I should see the message "Your order has been placed successfully!"')
 def step_verify_success_message(context):
     with allure.step('I should see the message "Your order has been placed successfully!"'):
-        context.payment_done = PaymentDone(context.page)
+        context.payment_done = PaymentDonePage(context.page)
         context.payment_done.payment_done_message()
 
 
@@ -145,11 +154,11 @@ def step_delete_account(context):
 @then('I should see the message "ACCOUNT DELETED!"')
 def step_verify_account_deleted(context):
     with allure.step('I should see the message "ACCOUNT DELETED!"'):
-        context.delete_acc = DeleteAcc(context.page)
+        context.delete_acc = DeleteAccPage(context.page)
         context.delete_acc.check_delete_message()
 
 
-@when("I finish by clicking Continue")
+@then("I finish by clicking Continue")
 def step_final_continue(context):
     with allure.step("I finish by clicking Continue"):
         context.delete_acc.click_continue()

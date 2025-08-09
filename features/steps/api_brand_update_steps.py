@@ -1,4 +1,4 @@
-from behave import when, then
+from behave import *
 import requests
 import json
 import allure
@@ -19,6 +19,16 @@ def step_impl_update_brands_list(context):
         allure.attach(
             context.response.text,
             name="Response Body",
+            attachment_type=allure.attachment_type.TEXT
+        )
+        allure.attach(
+            json.dumps(dict(context.response.request.headers), indent=2),
+            name="Request Headers",
+            attachment_type=allure.attachment_type.JSON
+        )
+        allure.attach(
+            url,
+            name="Request URL",
             attachment_type=allure.attachment_type.TEXT
         )
 

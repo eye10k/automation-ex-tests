@@ -1,28 +1,32 @@
-from pages.BasePage import BasePage
-import allure
-from utilities import configReader
+from pages.base_page import BasePage
 import logging
 import allure
-from utilities.LogUtil import Logger
+from utilities.log_util import Logger
+
 
 log = Logger(__name__, logging.INFO)
 
-class payment(BasePage):
+class PaymentPage(BasePage):
+    field_name_on_card_CSS = '[data-qa="name-on-card"]'
+    field_number_on_card_CSS = '[data-qa="card-number"]'
+    field_expire_month_CSS = '[data-qa="expiry-month"]'
+    field_expire_year_CSS = '[data-qa="expiry-year"]'
+    field_cvc_on_card_CSS = '[data-qa="cvc"]'
+    pay_confirm_btn_CSS = '[data-qa="pay-button"]'
+
     def __init__(self, page):
         super().__init__(page)
 
-
-    def payment(self):
+    def fill_payment_form(self, PaymentCard):
         with allure.step("filling payment details"):
-            self.click("payment_name_on_card_XPATH")
-            self.type("payment_name_on_card_XPATH", "serg test")
-            self.click("payment_number_on_card_XPATH")
-            self.type("payment_number_on_card_XPATH", "1234567890")
-            self.click("payment_expire_month_XPATH")
-            self.type("payment_expire_month_XPATH", "12")
-            self.click("payment_expire_year_XPATH")
-            self.type("payment_expire_year_XPATH", "2023")
-            self.click("payment_cvc_on_card_XPATH")
-            self.type("payment_cvc_on_card_XPATH", "123")
-            self.click("payment_pay_button_XPATH")
+            self.type(self.field_name_on_card_CSS, PaymentCard.holder_name)
+            self.click(self.field_number_on_card_CSS)
+            self.type(self.field_number_on_card_CSS, PaymentCard.card_number)
+            self.click(self.field_expire_month_CSS)
+            self.type(self.field_expire_month_CSS, PaymentCard.expire_month)
+            self.click(self.field_expire_year_CSS)
+            self.type(self.field_expire_year_CSS, PaymentCard.expire_year)
+            self.click(self.field_cvc_on_card_CSS)
+            self.type(self.field_cvc_on_card_CSS, PaymentCard.cvc)
+            self.click(self.pay_confirm_btn_CSS)
             log.logger.info("Clicked on payment button")

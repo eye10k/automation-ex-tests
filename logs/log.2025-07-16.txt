@@ -1,0 +1,294 @@
+2025-07-16 08:28:56,743 - BasePage.py:[30] - [INFO] - Moving to an Element product_XPATH
+2025-07-16 08:28:57,019 - BasePage.py:[20] - [INFO] - Clicking on product_XPATH
+2025-07-16 08:28:58,127 - BasePage.py:[20] - [INFO] - Clicking on cart_XPATH
+2025-07-16 08:28:58,316 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-16 08:28:58,683 - BasePage.py:[20] - [INFO] - Clicking on register_XPATH
+2025-07-16 08:28:58,760 - BasePage.py:[25] - [INFO] - Typing on name_XPATH and entered Toby
+2025-07-16 08:28:58,849 - BasePage.py:[25] - [INFO] - Typing on email_signup_XPATH and entered f836ee81-cf67-49d7-b45c-2aaab39c6362@example.com
+2025-07-16 08:28:59,139 - BasePage.py:[20] - [INFO] - Clicking on signup_XPATH
+2025-07-16 08:28:59,274 - BasePage.py:[20] - [INFO] - Clicking on title_XPATH
+2025-07-16 08:28:59,376 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-16 08:28:59,419 - BasePage.py:[25] - [INFO] - Typing on sign_password_XPATH and entered automation123!
+2025-07-16 08:28:59,466 - BasePage.py:[36] - [INFO] - Selected 1 from sing_day_XPATH
+2025-07-16 08:28:59,499 - BasePage.py:[36] - [INFO] - Selected 1 from sing_month_XPATH
+2025-07-16 08:28:59,528 - BasePage.py:[36] - [INFO] - Selected 1990 from sing_year_XPATH
+2025-07-16 08:28:59,560 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-16 08:28:59,595 - BasePage.py:[25] - [INFO] - Typing on last_name_XPATH and entered Styd
+2025-07-16 08:28:59,628 - BasePage.py:[25] - [INFO] - Typing on company_XPATH and entered Test ARLOYS
+2025-07-16 08:28:59,726 - BasePage.py:[25] - [INFO] - Typing on address_XPATH and entered 123 Rodeo Drive
+2025-07-16 08:29:00,323 - BasePage.py:[25] - [INFO] - Typing on address2_XPATH and entered 122 Rodeo Drive1
+2025-07-16 08:29:00,421 - BasePage.py:[36] - [INFO] - Selected United States from country_XPATH
+2025-07-16 08:29:00,487 - BasePage.py:[25] - [INFO] - Typing on state_XPATH and entered California
+2025-07-16 08:29:00,544 - BasePage.py:[25] - [INFO] - Typing on city_XPATH and entered San Francisco
+2025-07-16 08:29:00,589 - BasePage.py:[25] - [INFO] - Typing on zipcode_XPATH and entered 12345
+2025-07-16 08:29:00,647 - BasePage.py:[25] - [INFO] - Typing on mobile_XPATH and entered +1234567890
+2025-07-16 08:29:01,539 - BasePage.py:[20] - [INFO] - Clicking on create_account_XPATH
+2025-07-16 08:29:07,484 - BasePage.py:[20] - [INFO] - Clicking on continue_XPATH
+2025-07-16 08:29:08,436 - BasePage.py:[20] - [INFO] - Clicking on cart_button_XPATH
+2025-07-16 08:29:08,784 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-16 08:29:08,823 - BasePage.py:[48] - [INFO] - Text of checkout_fullname_XPATH: Mr. Toby Styd
+2025-07-16 08:29:08,837 - BasePage.py:[48] - [INFO] - Text of checkout_phone_XPATH: +1234567890
+2025-07-16 08:29:09,583 - BasePage.py:[20] - [INFO] - Clicking on checkout_message_XPATH
+2025-07-16 08:29:10,041 - BasePage.py:[20] - [INFO] - Clicking on checkout_place_order_XPATH
+2025-07-16 08:29:10,118 - BasePage.py:[20] - [INFO] - Clicking on payment_name_on_card_XPATH
+2025-07-16 08:29:10,215 - BasePage.py:[25] - [INFO] - Typing on payment_name_on_card_XPATH and entered serg test
+2025-07-16 08:29:10,279 - BasePage.py:[20] - [INFO] - Clicking on payment_number_on_card_XPATH
+2025-07-16 08:29:10,306 - BasePage.py:[25] - [INFO] - Typing on payment_number_on_card_XPATH and entered 1234567890
+2025-07-16 08:29:10,364 - BasePage.py:[20] - [INFO] - Clicking on payment_expire_month_XPATH
+2025-07-16 08:29:10,388 - BasePage.py:[25] - [INFO] - Typing on payment_expire_month_XPATH and entered 12
+2025-07-16 08:29:10,442 - BasePage.py:[20] - [INFO] - Clicking on payment_expire_year_XPATH
+2025-07-16 08:29:10,569 - BasePage.py:[25] - [INFO] - Typing on payment_expire_year_XPATH and entered 2023
+2025-07-16 08:29:10,635 - BasePage.py:[20] - [INFO] - Clicking on payment_cvc_on_card_XPATH
+2025-07-16 08:29:10,676 - BasePage.py:[25] - [INFO] - Typing on payment_cvc_on_card_XPATH and entered 123
+2025-07-16 08:29:12,396 - BasePage.py:[20] - [INFO] - Clicking on payment_pay_button_XPATH
+2025-07-16 08:29:12,397 - payment_page.py:[28] - [INFO] - Clicked on payment button
+2025-07-16 08:29:12,466 - BasePage.py:[48] - [INFO] - Text of payment_done_title_XPATH: Congratulations! Your order has been confirmed!
+2025-07-16 08:29:12,789 - BasePage.py:[20] - [INFO] - Clicking on delete_account_XPATH
+2025-07-16 08:29:12,935 - BasePage.py:[30] - [INFO] - Moving to an Element delete_acc_message_XPATH
+2025-07-16 08:29:12,947 - BasePage.py:[48] - [INFO] - Text of delete_acc_message_XPATH: Your account has been permanently deleted!
+2025-07-16 08:29:13,308 - BasePage.py:[20] - [INFO] - Clicking on cont_delete_XPATH
+2025-07-16 08:31:50,514 - BasePage.py:[30] - [INFO] - Moving to an Element product_XPATH
+2025-07-16 08:31:50,596 - BasePage.py:[20] - [INFO] - Clicking on product_XPATH
+2025-07-16 08:31:51,804 - BasePage.py:[20] - [INFO] - Clicking on cart_XPATH
+2025-07-16 08:31:51,855 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-16 08:31:52,227 - BasePage.py:[20] - [INFO] - Clicking on register_XPATH
+2025-07-16 08:31:52,268 - BasePage.py:[25] - [INFO] - Typing on name_XPATH and entered Toby
+2025-07-16 08:31:52,295 - BasePage.py:[25] - [INFO] - Typing on email_signup_XPATH and entered fd61256f-8d56-4e0c-91e2-b64dc76b9bd7@example.com
+2025-07-16 08:31:52,668 - BasePage.py:[20] - [INFO] - Clicking on signup_XPATH
+2025-07-16 08:31:52,743 - BasePage.py:[20] - [INFO] - Clicking on title_XPATH
+2025-07-16 08:31:52,817 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-16 08:31:52,849 - BasePage.py:[25] - [INFO] - Typing on sign_password_XPATH and entered automation123!
+2025-07-16 08:31:52,880 - BasePage.py:[36] - [INFO] - Selected 1 from sing_day_XPATH
+2025-07-16 08:31:52,917 - BasePage.py:[36] - [INFO] - Selected 1 from sing_month_XPATH
+2025-07-16 08:31:52,946 - BasePage.py:[36] - [INFO] - Selected 1990 from sing_year_XPATH
+2025-07-16 08:31:52,975 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-16 08:31:53,011 - BasePage.py:[25] - [INFO] - Typing on last_name_XPATH and entered Styd
+2025-07-16 08:31:53,050 - BasePage.py:[25] - [INFO] - Typing on company_XPATH and entered Test ARLOYS
+2025-07-16 08:31:53,095 - BasePage.py:[25] - [INFO] - Typing on address_XPATH and entered 123 Rodeo Drive
+2025-07-16 08:31:53,134 - BasePage.py:[25] - [INFO] - Typing on address2_XPATH and entered 122 Rodeo Drive1
+2025-07-16 08:31:53,165 - BasePage.py:[36] - [INFO] - Selected United States from country_XPATH
+2025-07-16 08:31:53,203 - BasePage.py:[25] - [INFO] - Typing on state_XPATH and entered California
+2025-07-16 08:31:53,245 - BasePage.py:[25] - [INFO] - Typing on city_XPATH and entered San Francisco
+2025-07-16 08:31:53,278 - BasePage.py:[25] - [INFO] - Typing on zipcode_XPATH and entered 12345
+2025-07-16 08:31:53,319 - BasePage.py:[25] - [INFO] - Typing on mobile_XPATH and entered +1234567890
+2025-07-16 08:31:53,967 - BasePage.py:[20] - [INFO] - Clicking on create_account_XPATH
+2025-07-16 08:31:59,907 - BasePage.py:[20] - [INFO] - Clicking on continue_XPATH
+2025-07-16 08:32:01,095 - BasePage.py:[20] - [INFO] - Clicking on cart_button_XPATH
+2025-07-16 08:32:01,451 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-16 08:32:01,474 - BasePage.py:[48] - [INFO] - Text of checkout_fullname_XPATH: Mr. Toby Styd
+2025-07-16 08:32:01,485 - BasePage.py:[48] - [INFO] - Text of checkout_phone_XPATH: +1234567890
+2025-07-16 08:32:01,571 - BasePage.py:[20] - [INFO] - Clicking on checkout_message_XPATH
+2025-07-16 08:32:02,027 - BasePage.py:[20] - [INFO] - Clicking on checkout_place_order_XPATH
+2025-07-16 08:32:02,076 - BasePage.py:[20] - [INFO] - Clicking on payment_name_on_card_XPATH
+2025-07-16 08:32:02,102 - BasePage.py:[25] - [INFO] - Typing on payment_name_on_card_XPATH and entered serg test
+2025-07-16 08:32:02,199 - BasePage.py:[20] - [INFO] - Clicking on payment_number_on_card_XPATH
+2025-07-16 08:32:02,226 - BasePage.py:[25] - [INFO] - Typing on payment_number_on_card_XPATH and entered 1234567890
+2025-07-16 08:32:02,270 - BasePage.py:[20] - [INFO] - Clicking on payment_expire_month_XPATH
+2025-07-16 08:32:02,297 - BasePage.py:[25] - [INFO] - Typing on payment_expire_month_XPATH and entered 12
+2025-07-16 08:32:02,345 - BasePage.py:[20] - [INFO] - Clicking on payment_expire_year_XPATH
+2025-07-16 08:32:02,365 - BasePage.py:[25] - [INFO] - Typing on payment_expire_year_XPATH and entered 2023
+2025-07-16 08:32:02,407 - BasePage.py:[20] - [INFO] - Clicking on payment_cvc_on_card_XPATH
+2025-07-16 08:32:02,429 - BasePage.py:[25] - [INFO] - Typing on payment_cvc_on_card_XPATH and entered 123
+2025-07-16 08:32:03,969 - BasePage.py:[20] - [INFO] - Clicking on payment_pay_button_XPATH
+2025-07-16 08:32:03,970 - payment_page.py:[28] - [INFO] - Clicked on payment button
+2025-07-16 08:32:04,023 - BasePage.py:[48] - [INFO] - Text of payment_done_title_XPATH: Congratulations! Your order has been confirmed!
+2025-07-16 08:32:04,339 - BasePage.py:[20] - [INFO] - Clicking on delete_account_XPATH
+2025-07-16 08:32:04,408 - BasePage.py:[30] - [INFO] - Moving to an Element delete_acc_message_XPATH
+2025-07-16 08:32:04,422 - BasePage.py:[48] - [INFO] - Text of delete_acc_message_XPATH: Your account has been permanently deleted!
+2025-07-16 08:32:04,857 - BasePage.py:[20] - [INFO] - Clicking on cont_delete_XPATH
+2025-07-16 08:52:29,892 - BasePage.py:[30] - [INFO] - Moving to an Element product_XPATH
+2025-07-16 08:52:29,964 - BasePage.py:[20] - [INFO] - Clicking on product_XPATH
+2025-07-16 08:52:31,256 - BasePage.py:[20] - [INFO] - Clicking on cart_XPATH
+2025-07-16 08:52:31,309 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-16 08:52:31,676 - BasePage.py:[20] - [INFO] - Clicking on register_XPATH
+2025-07-16 08:52:31,726 - BasePage.py:[25] - [INFO] - Typing on name_XPATH and entered Toby
+2025-07-16 08:52:31,795 - BasePage.py:[25] - [INFO] - Typing on email_signup_XPATH and entered 0748633c-4cc9-47ba-898d-8fba30dc8801@example.com
+2025-07-16 08:52:32,112 - BasePage.py:[20] - [INFO] - Clicking on signup_XPATH
+2025-07-16 08:52:32,173 - BasePage.py:[20] - [INFO] - Clicking on title_XPATH
+2025-07-16 08:52:32,236 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-16 08:52:32,271 - BasePage.py:[25] - [INFO] - Typing on sign_password_XPATH and entered automation123!
+2025-07-16 08:52:32,301 - BasePage.py:[36] - [INFO] - Selected 1 from sing_day_XPATH
+2025-07-16 08:52:32,331 - BasePage.py:[36] - [INFO] - Selected 1 from sing_month_XPATH
+2025-07-16 08:52:32,359 - BasePage.py:[36] - [INFO] - Selected 1990 from sing_year_XPATH
+2025-07-16 08:52:32,397 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-16 08:52:32,445 - BasePage.py:[25] - [INFO] - Typing on last_name_XPATH and entered Styd
+2025-07-16 08:52:32,479 - BasePage.py:[25] - [INFO] - Typing on company_XPATH and entered Test ARLOYS
+2025-07-16 08:52:32,512 - BasePage.py:[25] - [INFO] - Typing on address_XPATH and entered 123 Rodeo Drive
+2025-07-16 08:52:32,548 - BasePage.py:[25] - [INFO] - Typing on address2_XPATH and entered 122 Rodeo Drive1
+2025-07-16 08:52:32,581 - BasePage.py:[36] - [INFO] - Selected United States from country_XPATH
+2025-07-16 08:52:32,616 - BasePage.py:[25] - [INFO] - Typing on state_XPATH and entered California
+2025-07-16 08:52:32,666 - BasePage.py:[25] - [INFO] - Typing on city_XPATH and entered San Francisco
+2025-07-16 08:52:32,814 - BasePage.py:[25] - [INFO] - Typing on zipcode_XPATH and entered 12345
+2025-07-16 08:52:32,955 - BasePage.py:[25] - [INFO] - Typing on mobile_XPATH and entered +1234567890
+2025-07-16 08:52:33,663 - BasePage.py:[20] - [INFO] - Clicking on create_account_XPATH
+2025-07-16 08:52:39,596 - BasePage.py:[20] - [INFO] - Clicking on continue_XPATH
+2025-07-16 08:52:40,745 - BasePage.py:[20] - [INFO] - Clicking on cart_button_XPATH
+2025-07-16 08:52:41,067 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-16 08:52:41,094 - BasePage.py:[48] - [INFO] - Text of checkout_fullname_XPATH: Mr. Toby Styd
+2025-07-16 08:52:41,105 - BasePage.py:[48] - [INFO] - Text of checkout_phone_XPATH: +1234567890
+2025-07-16 08:52:41,818 - BasePage.py:[20] - [INFO] - Clicking on checkout_message_XPATH
+2025-07-16 08:52:42,269 - BasePage.py:[20] - [INFO] - Clicking on checkout_place_order_XPATH
+2025-07-16 08:52:42,325 - BasePage.py:[20] - [INFO] - Clicking on payment_name_on_card_XPATH
+2025-07-16 08:52:42,408 - BasePage.py:[25] - [INFO] - Typing on payment_name_on_card_XPATH and entered serg test
+2025-07-16 08:52:42,465 - BasePage.py:[20] - [INFO] - Clicking on payment_number_on_card_XPATH
+2025-07-16 08:52:42,497 - BasePage.py:[25] - [INFO] - Typing on payment_number_on_card_XPATH and entered 1234567890
+2025-07-16 08:52:42,556 - BasePage.py:[20] - [INFO] - Clicking on payment_expire_month_XPATH
+2025-07-16 08:52:42,582 - BasePage.py:[25] - [INFO] - Typing on payment_expire_month_XPATH and entered 12
+2025-07-16 08:52:42,634 - BasePage.py:[20] - [INFO] - Clicking on payment_expire_year_XPATH
+2025-07-16 08:52:42,659 - BasePage.py:[25] - [INFO] - Typing on payment_expire_year_XPATH and entered 2023
+2025-07-16 08:52:42,706 - BasePage.py:[20] - [INFO] - Clicking on payment_cvc_on_card_XPATH
+2025-07-16 08:52:42,729 - BasePage.py:[25] - [INFO] - Typing on payment_cvc_on_card_XPATH and entered 123
+2025-07-16 08:52:44,245 - BasePage.py:[20] - [INFO] - Clicking on payment_pay_button_XPATH
+2025-07-16 08:52:44,247 - payment_page.py:[28] - [INFO] - Clicked on payment button
+2025-07-16 08:52:44,304 - BasePage.py:[48] - [INFO] - Text of payment_done_title_XPATH: Congratulations! Your order has been confirmed!
+2025-07-16 08:52:44,613 - BasePage.py:[20] - [INFO] - Clicking on delete_account_XPATH
+2025-07-16 08:52:44,672 - BasePage.py:[30] - [INFO] - Moving to an Element delete_acc_message_XPATH
+2025-07-16 08:52:44,733 - BasePage.py:[48] - [INFO] - Text of delete_acc_message_XPATH: Your account has been permanently deleted!
+2025-07-16 08:52:45,082 - BasePage.py:[20] - [INFO] - Clicking on cont_delete_XPATH
+2025-07-16 11:07:44,274 - BasePage.py:[30] - [INFO] - Moving to an Element product_XPATH
+2025-07-16 11:07:44,335 - BasePage.py:[20] - [INFO] - Clicking on product_XPATH
+2025-07-16 11:07:44,857 - BasePage.py:[20] - [INFO] - Clicking on cart_XPATH
+2025-07-16 11:07:44,926 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-16 11:07:45,223 - BasePage.py:[20] - [INFO] - Clicking on register_XPATH
+2025-07-16 11:07:45,255 - BasePage.py:[25] - [INFO] - Typing on name_XPATH and entered Toby
+2025-07-16 11:07:45,271 - BasePage.py:[25] - [INFO] - Typing on email_signup_XPATH and entered ac457fba-f1e7-4dd1-9dc2-4ffe50fcc858@example.com
+2025-07-16 11:07:45,565 - BasePage.py:[20] - [INFO] - Clicking on signup_XPATH
+2025-07-16 11:07:45,661 - BasePage.py:[20] - [INFO] - Clicking on title_XPATH
+2025-07-16 11:07:45,679 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-16 11:07:45,740 - BasePage.py:[25] - [INFO] - Typing on sign_password_XPATH and entered automation123!
+2025-07-16 11:07:45,759 - BasePage.py:[36] - [INFO] - Selected 1 from sing_day_XPATH
+2025-07-16 11:07:45,778 - BasePage.py:[36] - [INFO] - Selected 1 from sing_month_XPATH
+2025-07-16 11:07:45,797 - BasePage.py:[36] - [INFO] - Selected 1990 from sing_year_XPATH
+2025-07-16 11:07:45,815 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-16 11:07:45,836 - BasePage.py:[25] - [INFO] - Typing on last_name_XPATH and entered Styd
+2025-07-16 11:07:45,857 - BasePage.py:[25] - [INFO] - Typing on company_XPATH and entered Test ARLOYS
+2025-07-16 11:07:45,876 - BasePage.py:[25] - [INFO] - Typing on address_XPATH and entered 123 Rodeo Drive
+2025-07-16 11:07:45,896 - BasePage.py:[25] - [INFO] - Typing on address2_XPATH and entered 122 Rodeo Drive1
+2025-07-16 11:07:45,914 - BasePage.py:[36] - [INFO] - Selected United States from country_XPATH
+2025-07-16 11:07:45,933 - BasePage.py:[25] - [INFO] - Typing on state_XPATH and entered California
+2025-07-16 11:07:45,953 - BasePage.py:[25] - [INFO] - Typing on city_XPATH and entered San Francisco
+2025-07-16 11:07:45,971 - BasePage.py:[25] - [INFO] - Typing on zipcode_XPATH and entered 12345
+2025-07-16 11:07:45,991 - BasePage.py:[25] - [INFO] - Typing on mobile_XPATH and entered +1234567890
+2025-07-16 11:07:46,586 - BasePage.py:[20] - [INFO] - Clicking on create_account_XPATH
+2025-07-16 11:07:52,463 - BasePage.py:[20] - [INFO] - Clicking on continue_XPATH
+2025-07-16 11:07:53,542 - BasePage.py:[20] - [INFO] - Clicking on cart_button_XPATH
+2025-07-16 11:07:53,866 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-16 11:07:53,893 - BasePage.py:[48] - [INFO] - Text of checkout_fullname_XPATH: Mr. Toby Styd
+2025-07-16 11:07:53,901 - BasePage.py:[48] - [INFO] - Text of checkout_phone_XPATH: +1234567890
+2025-07-16 11:07:54,600 - BasePage.py:[20] - [INFO] - Clicking on checkout_message_XPATH
+2025-07-16 11:07:54,950 - BasePage.py:[20] - [INFO] - Clicking on checkout_place_order_XPATH
+2025-07-16 11:07:55,009 - BasePage.py:[20] - [INFO] - Clicking on payment_name_on_card_XPATH
+2025-07-16 11:07:55,026 - BasePage.py:[25] - [INFO] - Typing on payment_name_on_card_XPATH and entered serg test
+2025-07-16 11:07:55,110 - BasePage.py:[20] - [INFO] - Clicking on payment_number_on_card_XPATH
+2025-07-16 11:07:55,126 - BasePage.py:[25] - [INFO] - Typing on payment_number_on_card_XPATH and entered 1234567890
+2025-07-16 11:07:55,177 - BasePage.py:[20] - [INFO] - Clicking on payment_expire_month_XPATH
+2025-07-16 11:07:55,218 - BasePage.py:[25] - [INFO] - Typing on payment_expire_month_XPATH and entered 12
+2025-07-16 11:07:55,294 - BasePage.py:[20] - [INFO] - Clicking on payment_expire_year_XPATH
+2025-07-16 11:07:55,329 - BasePage.py:[25] - [INFO] - Typing on payment_expire_year_XPATH and entered 2023
+2025-07-16 11:07:55,377 - BasePage.py:[20] - [INFO] - Clicking on payment_cvc_on_card_XPATH
+2025-07-16 11:07:55,393 - BasePage.py:[25] - [INFO] - Typing on payment_cvc_on_card_XPATH and entered 123
+2025-07-16 11:07:56,915 - BasePage.py:[20] - [INFO] - Clicking on payment_pay_button_XPATH
+2025-07-16 11:07:56,915 - payment_page.py:[28] - [INFO] - Clicked on payment button
+2025-07-16 11:07:56,960 - BasePage.py:[48] - [INFO] - Text of payment_done_title_XPATH: Congratulations! Your order has been confirmed!
+2025-07-16 11:07:57,242 - BasePage.py:[20] - [INFO] - Clicking on delete_account_XPATH
+2025-07-16 11:07:57,318 - BasePage.py:[30] - [INFO] - Moving to an Element delete_acc_message_XPATH
+2025-07-16 11:07:57,358 - BasePage.py:[48] - [INFO] - Text of delete_acc_message_XPATH: Your account has been permanently deleted!
+2025-07-16 11:07:57,704 - BasePage.py:[20] - [INFO] - Clicking on cont_delete_XPATH
+2025-07-16 11:08:24,181 - BasePage.py:[30] - [INFO] - Moving to an Element product_XPATH
+2025-07-16 11:08:24,251 - BasePage.py:[20] - [INFO] - Clicking on product_XPATH
+2025-07-16 11:08:25,433 - BasePage.py:[20] - [INFO] - Clicking on cart_XPATH
+2025-07-16 11:08:25,487 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-16 11:08:25,813 - BasePage.py:[20] - [INFO] - Clicking on register_XPATH
+2025-07-16 11:08:25,846 - BasePage.py:[25] - [INFO] - Typing on name_XPATH and entered Toby
+2025-07-16 11:08:25,875 - BasePage.py:[25] - [INFO] - Typing on email_signup_XPATH and entered a83be715-1891-4676-bc55-14441025529a@example.com
+2025-07-16 11:08:26,203 - BasePage.py:[20] - [INFO] - Clicking on signup_XPATH
+2025-07-16 11:08:26,252 - BasePage.py:[20] - [INFO] - Clicking on title_XPATH
+2025-07-16 11:08:26,277 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-16 11:08:26,348 - BasePage.py:[25] - [INFO] - Typing on sign_password_XPATH and entered automation123!
+2025-07-16 11:08:26,376 - BasePage.py:[36] - [INFO] - Selected 1 from sing_day_XPATH
+2025-07-16 11:08:26,404 - BasePage.py:[36] - [INFO] - Selected 1 from sing_month_XPATH
+2025-07-16 11:08:26,429 - BasePage.py:[36] - [INFO] - Selected 1990 from sing_year_XPATH
+2025-07-16 11:08:26,460 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-16 11:08:26,497 - BasePage.py:[25] - [INFO] - Typing on last_name_XPATH and entered Styd
+2025-07-16 11:08:26,528 - BasePage.py:[25] - [INFO] - Typing on company_XPATH and entered Test ARLOYS
+2025-07-16 11:08:26,555 - BasePage.py:[25] - [INFO] - Typing on address_XPATH and entered 123 Rodeo Drive
+2025-07-16 11:08:26,588 - BasePage.py:[25] - [INFO] - Typing on address2_XPATH and entered 122 Rodeo Drive1
+2025-07-16 11:08:26,614 - BasePage.py:[36] - [INFO] - Selected United States from country_XPATH
+2025-07-16 11:08:26,647 - BasePage.py:[25] - [INFO] - Typing on state_XPATH and entered California
+2025-07-16 11:08:26,681 - BasePage.py:[25] - [INFO] - Typing on city_XPATH and entered San Francisco
+2025-07-16 11:08:26,714 - BasePage.py:[25] - [INFO] - Typing on zipcode_XPATH and entered 12345
+2025-07-16 11:08:26,745 - BasePage.py:[25] - [INFO] - Typing on mobile_XPATH and entered +1234567890
+2025-07-16 11:08:27,342 - BasePage.py:[20] - [INFO] - Clicking on create_account_XPATH
+2025-07-16 11:08:33,243 - BasePage.py:[20] - [INFO] - Clicking on continue_XPATH
+2025-07-16 11:08:34,318 - BasePage.py:[20] - [INFO] - Clicking on cart_button_XPATH
+2025-07-16 11:08:34,639 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-16 11:08:34,665 - BasePage.py:[48] - [INFO] - Text of checkout_fullname_XPATH: Mr. Toby Styd
+2025-07-16 11:08:34,677 - BasePage.py:[48] - [INFO] - Text of checkout_phone_XPATH: +1234567890
+2025-07-16 11:08:34,767 - BasePage.py:[20] - [INFO] - Clicking on checkout_message_XPATH
+2025-07-16 11:08:35,167 - BasePage.py:[20] - [INFO] - Clicking on checkout_place_order_XPATH
+2025-07-16 11:08:35,224 - BasePage.py:[20] - [INFO] - Clicking on payment_name_on_card_XPATH
+2025-07-16 11:08:35,247 - BasePage.py:[25] - [INFO] - Typing on payment_name_on_card_XPATH and entered serg test
+2025-07-16 11:08:35,338 - BasePage.py:[20] - [INFO] - Clicking on payment_number_on_card_XPATH
+2025-07-16 11:08:35,364 - BasePage.py:[25] - [INFO] - Typing on payment_number_on_card_XPATH and entered 1234567890
+2025-07-16 11:08:35,407 - BasePage.py:[20] - [INFO] - Clicking on payment_expire_month_XPATH
+2025-07-16 11:08:35,431 - BasePage.py:[25] - [INFO] - Typing on payment_expire_month_XPATH and entered 12
+2025-07-16 11:08:35,480 - BasePage.py:[20] - [INFO] - Clicking on payment_expire_year_XPATH
+2025-07-16 11:08:35,502 - BasePage.py:[25] - [INFO] - Typing on payment_expire_year_XPATH and entered 2023
+2025-07-16 11:08:35,547 - BasePage.py:[20] - [INFO] - Clicking on payment_cvc_on_card_XPATH
+2025-07-16 11:08:35,571 - BasePage.py:[25] - [INFO] - Typing on payment_cvc_on_card_XPATH and entered 123
+2025-07-16 11:08:37,076 - BasePage.py:[20] - [INFO] - Clicking on payment_pay_button_XPATH
+2025-07-16 11:08:37,076 - payment_page.py:[28] - [INFO] - Clicked on payment button
+2025-07-16 11:08:37,128 - BasePage.py:[48] - [INFO] - Text of payment_done_title_XPATH: Congratulations! Your order has been confirmed!
+2025-07-16 11:08:37,434 - BasePage.py:[20] - [INFO] - Clicking on delete_account_XPATH
+2025-07-16 11:08:37,491 - BasePage.py:[30] - [INFO] - Moving to an Element delete_acc_message_XPATH
+2025-07-16 11:08:37,546 - BasePage.py:[48] - [INFO] - Text of delete_acc_message_XPATH: Your account has been permanently deleted!
+2025-07-16 11:08:37,907 - BasePage.py:[20] - [INFO] - Clicking on cont_delete_XPATH
+2025-07-16 11:19:58,013 - BasePage.py:[30] - [INFO] - Moving to an Element product_XPATH
+2025-07-16 11:19:58,094 - BasePage.py:[20] - [INFO] - Clicking on product_XPATH
+2025-07-16 11:19:59,313 - BasePage.py:[20] - [INFO] - Clicking on cart_XPATH
+2025-07-16 11:19:59,381 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-16 11:19:59,707 - BasePage.py:[20] - [INFO] - Clicking on register_XPATH
+2025-07-16 11:19:59,742 - BasePage.py:[25] - [INFO] - Typing on name_XPATH and entered Toby
+2025-07-16 11:19:59,757 - BasePage.py:[25] - [INFO] - Typing on email_signup_XPATH and entered 0ce02c5a-b356-4494-946b-0c79ef8630a0@example.com
+2025-07-16 11:20:00,144 - BasePage.py:[20] - [INFO] - Clicking on signup_XPATH
+2025-07-16 11:20:00,232 - BasePage.py:[20] - [INFO] - Clicking on title_XPATH
+2025-07-16 11:20:00,250 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-16 11:20:00,308 - BasePage.py:[25] - [INFO] - Typing on sign_password_XPATH and entered automation123!
+2025-07-16 11:20:00,326 - BasePage.py:[36] - [INFO] - Selected 1 from sing_day_XPATH
+2025-07-16 11:20:00,351 - BasePage.py:[36] - [INFO] - Selected 1 from sing_month_XPATH
+2025-07-16 11:20:00,367 - BasePage.py:[36] - [INFO] - Selected 1990 from sing_year_XPATH
+2025-07-16 11:20:00,386 - BasePage.py:[25] - [INFO] - Typing on first_name_XPATH and entered Toby
+2025-07-16 11:20:00,404 - BasePage.py:[25] - [INFO] - Typing on last_name_XPATH and entered Styd
+2025-07-16 11:20:00,422 - BasePage.py:[25] - [INFO] - Typing on company_XPATH and entered Test ARLOYS
+2025-07-16 11:20:00,440 - BasePage.py:[25] - [INFO] - Typing on address_XPATH and entered 123 Rodeo Drive
+2025-07-16 11:20:00,459 - BasePage.py:[25] - [INFO] - Typing on address2_XPATH and entered 122 Rodeo Drive1
+2025-07-16 11:20:00,477 - BasePage.py:[36] - [INFO] - Selected United States from country_XPATH
+2025-07-16 11:20:00,497 - BasePage.py:[25] - [INFO] - Typing on state_XPATH and entered California
+2025-07-16 11:20:00,515 - BasePage.py:[25] - [INFO] - Typing on city_XPATH and entered San Francisco
+2025-07-16 11:20:00,533 - BasePage.py:[25] - [INFO] - Typing on zipcode_XPATH and entered 12345
+2025-07-16 11:20:00,553 - BasePage.py:[25] - [INFO] - Typing on mobile_XPATH and entered +1234567890
+2025-07-16 11:20:01,356 - BasePage.py:[20] - [INFO] - Clicking on create_account_XPATH
+2025-07-16 11:20:07,309 - BasePage.py:[20] - [INFO] - Clicking on continue_XPATH
+2025-07-16 11:20:08,442 - BasePage.py:[20] - [INFO] - Clicking on cart_button_XPATH
+2025-07-16 11:20:08,757 - BasePage.py:[20] - [INFO] - Clicking on proceed_XPATH
+2025-07-16 11:20:08,783 - BasePage.py:[48] - [INFO] - Text of checkout_fullname_XPATH: Mr. Toby Styd
+2025-07-16 11:20:08,790 - BasePage.py:[48] - [INFO] - Text of checkout_phone_XPATH: +1234567890
+2025-07-16 11:20:09,575 - BasePage.py:[20] - [INFO] - Clicking on checkout_message_XPATH
+2025-07-16 11:20:09,941 - BasePage.py:[20] - [INFO] - Clicking on checkout_place_order_XPATH
+2025-07-16 11:20:10,016 - BasePage.py:[20] - [INFO] - Clicking on payment_name_on_card_XPATH
+2025-07-16 11:20:10,071 - BasePage.py:[25] - [INFO] - Typing on payment_name_on_card_XPATH and entered serg test
+2025-07-16 11:20:10,112 - BasePage.py:[20] - [INFO] - Clicking on payment_number_on_card_XPATH
+2025-07-16 11:20:10,128 - BasePage.py:[25] - [INFO] - Typing on payment_number_on_card_XPATH and entered 1234567890
+2025-07-16 11:20:10,180 - BasePage.py:[20] - [INFO] - Clicking on payment_expire_month_XPATH
+2025-07-16 11:20:10,195 - BasePage.py:[25] - [INFO] - Typing on payment_expire_month_XPATH and entered 12
+2025-07-16 11:20:10,244 - BasePage.py:[20] - [INFO] - Clicking on payment_expire_year_XPATH
+2025-07-16 11:20:10,260 - BasePage.py:[25] - [INFO] - Typing on payment_expire_year_XPATH and entered 2023
+2025-07-16 11:20:10,313 - BasePage.py:[20] - [INFO] - Clicking on payment_cvc_on_card_XPATH
+2025-07-16 11:20:10,331 - BasePage.py:[25] - [INFO] - Typing on payment_cvc_on_card_XPATH and entered 123
+2025-07-16 11:20:11,867 - BasePage.py:[20] - [INFO] - Clicking on payment_pay_button_XPATH
+2025-07-16 11:20:11,867 - payment_page.py:[28] - [INFO] - Clicked on payment button
+2025-07-16 11:20:11,913 - BasePage.py:[48] - [INFO] - Text of payment_done_title_XPATH: Congratulations! Your order has been confirmed!
+2025-07-16 11:20:12,229 - BasePage.py:[20] - [INFO] - Clicking on delete_account_XPATH
+2025-07-16 11:20:12,304 - BasePage.py:[30] - [INFO] - Moving to an Element delete_acc_message_XPATH
+2025-07-16 11:20:12,355 - BasePage.py:[48] - [INFO] - Text of delete_acc_message_XPATH: Your account has been permanently deleted!
+2025-07-16 11:20:12,739 - BasePage.py:[20] - [INFO] - Clicking on cont_delete_XPATH
