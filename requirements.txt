@@ -1,9 +1,11 @@
-pytest
+pytest~=8.4.1
 pytest-playwright
-playwright
-uuid
-requests
+playwright~=1.53.0
+uuid~=1.30
+requests~=2.32.4
 pytest-html
 allure-pytest
-behave
+behave~=1.2.6
 allure-behave
+allure-python-commons~=2.14.3
+Faker~=37.5.3
