@@ -1,1 +1,0 @@
-https://automationexercise.com/api/getUserDetailByEmail?email=testuser_52b2cd71-7703-40ab-a15a-d0f0a1f8b435@example.com

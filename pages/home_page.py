@@ -7,9 +7,7 @@ class HomePage(BasePage):
     product_cart_CSS = 'div.col-sm-4:nth-of-type(2) div.productinfo a[data-product-id="2"]'
     view_cart_popup_CSS = '.text-center a[href="/view_cart"]'
     cart_button_CSS = '#header .shop-menu a:has(i.fa-shopping-cart)'
-    #proceed_CSS = 'a[href="/view_cart"] i.fa.fa-shopping-cart'
 
-    # '.btn.check_out'
     def __init__(self, page):
         super().__init__(page)
 

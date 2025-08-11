@@ -1,36 +1,12 @@
 from behave import *
-import requests
-import json
 import allure
+from API.api_client import ApiClient
 
 @when("I try to update the brands list using an unsupported method")
 def step_impl_update_brands_list(context):
-    with allure.step("Send a PUT request to the brands list endpoint"):
-        url = "https://automationexercise.com/api/brandsList"
-        payload = {
-            "brand": "FAKE_BRAND"
-        }
-        context.response = requests.put(url, data=payload)
-        allure.attach(
-            json.dumps(payload, indent=2),
-            name="Request Payload",
-            attachment_type=allure.attachment_type.JSON
-        )
-        allure.attach(
-            context.response.text,
-            name="Response Body",
-            attachment_type=allure.attachment_type.TEXT
-        )
-        allure.attach(
-            json.dumps(dict(context.response.request.headers), indent=2),
-            name="Request Headers",
-            attachment_type=allure.attachment_type.JSON
-        )
-        allure.attach(
-            url,
-            name="Request URL",
-            attachment_type=allure.attachment_type.TEXT
-        )
+    client = ApiClient(base_url="https://automationexercise.com/api")
+    payload = {"brand": "FAKE_BRAND"}
+    context.response = client.send_put_request(endpoint="/brandsList", payload=payload)
 
 @then("I should receive a method not allowed error")
 def step_impl_verify_method_not_allowed(context):

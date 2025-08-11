@@ -25,4 +25,4 @@ Feature: Register and order as a new user
 
     When I delete my account
     Then I should see the message "ACCOUNT DELETED!"
-    Then I finish by clicking Continue
+    And I finish by clicking Continue

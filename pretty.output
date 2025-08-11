@@ -2,17 +2,17 @@
 Feature: Brand list management should reject unsupported operations # features/api_brand_update.feature:2
 
   Scenario: I attempt to update the brand list using an unsupported method  # features/api_brand_update.feature:4
-    When I try to update the brands list using an unsupported method        # features/steps/api_brand_update_steps.py:6
-    Then I should receive a method not allowed error                        # features/steps/api_brand_update_steps.py:35
+    When I try to update the brands list using an unsupported method        # features/steps/api_brand_update_steps.py:5
+    Then I should receive a method not allowed error                        # features/steps/api_brand_update_steps.py:11
 
 @api
 Feature: Registering a new user account via API # features/api_register.feature:2
 
   Scenario: I successfully register a new user through the API   # features/api_register.feature:4
     Given I am a new visitor without an account                  # features/steps/api_register_steps.py:8
-    When I register with valid personal and contact details      # features/steps/api_register_steps.py:13
-    Then my account should be successfully registered            # features/steps/api_register_steps.py:23
-    And I should be able to retrieve my account details by email # features/steps/api_register_steps.py:30
+    When I register with valid personal and contact details      # features/steps/api_register_steps.py:14
+    Then my account should be successfully registered            # features/steps/api_register_steps.py:27
+    And I should be able to retrieve my account details by email # features/steps/api_register_steps.py:36
 
 @ui
 Feature: Register and order as a new user # features/register.feature:2
@@ -36,5 +36,5 @@ Feature: Register and order as a new user # features/register.feature:2
     Then I should see the message "Your order has been placed successfully!" # features/steps/ui_register_steps.py:141
     When I delete my account                                                 # features/steps/ui_register_steps.py:148
     Then I should see the message "ACCOUNT DELETED!"                         # features/steps/ui_register_steps.py:154
-    Then I finish by clicking Continue                                       # features/steps/ui_register_steps.py:161
+    And I finish by clicking Continue                                        # features/steps/ui_register_steps.py:161
 
