@@ -124,7 +124,7 @@ def step_provide_payment_details(context):
         context.payment_page = PaymentPage(context.page)
         paymentCard = PaymentCard(
             "Test Card",
-            "1234 5678 9012 3456",
+            "4242424242424242",
             "12",
             "2028",
             "123"

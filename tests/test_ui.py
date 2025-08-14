@@ -4,12 +4,13 @@ import pytest
 import allure
 import uuid
 from models.user import User
+from models.PaymentCard import PaymentCard
 from pages.home_page import HomePage
 from pages.signup_page import SignupPage
 from pages.shopping_cart import ShoppingCartPage
 from pages.login_page import LoginPage
 from pages.acc_created import AccCreatedPage
-from pages.checkout_page import Сheckout
+from pages.checkout_page import CheckoutPage
 from pages.payment_page import PaymentPage
 from pages.payment_done import PaymentDonePage
 from pages.deleteacc_page import DeleteAccPage
@@ -40,7 +41,7 @@ class TestAddToCart(BaseTest):
             login_page.fill_email(f"{uuid.uuid4()}@example.com")
             login_page.click_Signup()
 
-            singup_page = SignupPage(page)
+            signup_page = SignupPage(page)
             user = User(
                 "Toby",
                 "Styd",
@@ -56,7 +57,7 @@ class TestAddToCart(BaseTest):
                 "San Francisco",
                 "12345",
                 "+1234567890")
-            singup_page.enter_acc_details(user)
+            signup_page.enter_acc_details(user)
 
 
             acc_created = AccCreatedPage(page)
@@ -65,13 +66,20 @@ class TestAddToCart(BaseTest):
             home_page.click_cart_button()
             cart_page.click_to_checkout()
 
-            checkout_page = checkout(page)
+            checkout_page = CheckoutPage(page)
             checkout_page.verify_checkout_page(user)
             checkout_page.fill_checkout_details(page)
             checkout_page.place_order()
 
             payment_page = PaymentPage(page)
-            payment_page.fill_payment_form()
+            card = PaymentCard(
+                "Test Card",
+                "4242424242424242",
+                "12",
+                "2028",
+                "123"
+            )
+            payment_page.fill_payment_form(card)
 
 
             payment_done = PaymentDonePage(page)

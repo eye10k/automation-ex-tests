@@ -17,7 +17,7 @@ class CheckoutPage(BasePage):
 
     def fill_checkout_details(self, User):
         self.click(self.message_area_CSS)
-        self.page.locator(self.message_area_CSS).type("Hello WORLD!")  # Уже не нужен configReader
+        self.page.locator(self.message_area_CSS).type("Hello WORLD!")
 
     def place_order(self):
         self.click(self.place_order_btn_XPATH)
