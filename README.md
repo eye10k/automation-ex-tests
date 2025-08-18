@@ -87,7 +87,7 @@ Main pytest configuration file containing:
 ### conf.ini:
 Application configuration including:
 - Base URLs
-- Web elements locators
+
 
 ### Contributing Steps:
 1. Fork the repository

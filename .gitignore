@@ -4,3 +4,7 @@ __pycache__/
 reports/
 allure-results/
 .idea/
+allure-results-bdd/
+artifacts/
+har_logs/
+logs/
