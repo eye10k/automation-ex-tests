@@ -6,7 +6,6 @@ import os
 from allure_commons.types import AttachmentType
 from playwright.sync_api import sync_playwright
 
-
 def pytest_addoption(parser):
     parser.addoption(
         "--my-headed",
@@ -14,7 +13,6 @@ def pytest_addoption(parser):
         default=False,
         help="Run tests with headed browser",
     )
-
 
 @pytest.fixture(scope="session")
 def browser(request):
@@ -25,7 +23,6 @@ def browser(request):
         yield browser
         browser.close()
 
-
 @pytest.fixture(scope="function")
 def context(browser):
     context = browser.new_context()
@@ -33,7 +30,6 @@ def context(browser):
     yield context
     context.tracing.stop(path="../trace.zip")
     context.close()
-
 
 @pytest.fixture(scope="function")
 def page(context, request):
@@ -46,12 +42,9 @@ def page(context, request):
 
     page.close()
 
-
 def pytest_runtest_makereport(item, call):
     if call.when == "call":
         setattr(item, "rep_call", call)
-
-
 
 def pytest_sessionfinish(session, exitstatus):
     if not os.getenv("CI"):
@@ -67,8 +60,6 @@ def pytest_sessionfinish(session, exitstatus):
                 subprocess.run(["xdg-open", "allure-report/index.html"])
         except Exception as e:
             print(f"[ERROR] Failed to generate or open Allure report: {e}")
-
-
 
 @pytest.fixture()
 def log_on_failure():

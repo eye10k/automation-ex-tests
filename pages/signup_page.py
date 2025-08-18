@@ -41,8 +41,3 @@ class SignupPage(BasePage):
             self.click(self.create_account_btn_CSS)
             time.sleep(5)
 
-
-
-    #
-    # def is_account_created(self):
-    #     return self.page.locator("//b[normalize-space()='Account Created!']").is_visible()

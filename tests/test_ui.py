@@ -4,19 +4,17 @@ import pytest
 import allure
 import uuid
 from models.user import User
-from models.PaymentCard import PaymentCard
+from models.payment_card import PaymentCard
 from pages.home_page import HomePage
 from pages.signup_page import SignupPage
-from pages.shopping_cart import ShoppingCartPage
+from pages.shopping_cart_page import ShoppingCartPage
 from pages.login_page import LoginPage
-from pages.acc_created import AccCreatedPage
+from pages.acc_created_page import AccCreatedPage
 from pages.checkout_page import CheckoutPage
 from pages.payment_page import PaymentPage
-from pages.payment_done import PaymentDonePage
+from pages.payment_done_page import PaymentDonePage
 from pages.deleteacc_page import DeleteAccPage
 from tests.BaseTest import BaseTest
-
-
 
 @allure.feature("Add product to cart")
 @allure.severity(allure.severity_level.NORMAL)
@@ -59,7 +57,6 @@ class TestAddToCart(BaseTest):
                 "+1234567890")
             signup_page.enter_acc_details(user)
 
-
             acc_created = AccCreatedPage(page)
             acc_created.verify_acc_created()
 
@@ -81,11 +78,9 @@ class TestAddToCart(BaseTest):
             )
             payment_page.fill_payment_form(card)
 
-
             payment_done = PaymentDonePage(page)
             payment_done.payment_done_message()
             payment_done.delete_acc()
-
 
             delete_acc = DeleteAccPage(page)
             delete_acc.check_delete_message()

@@ -3,7 +3,6 @@ import logging
 import allure
 from utilities.log_util import Logger
 
-
 log = Logger(__name__, logging.INFO)
 
 class PaymentPage(BasePage):

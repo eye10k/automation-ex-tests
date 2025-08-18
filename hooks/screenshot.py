@@ -15,7 +15,6 @@ def attach_screenshot(context, step, always=False):
         context.page.screenshot(path=screenshot_path, full_page=True)
         allure.attach.file(screenshot_path, name=f"Screenshot - {step.name}", attachment_type=AttachmentType.PNG)
 
-
 def attach_screenshot_if_failed(context, step):
     """Скриншот только при падении (старый метод, на случай, если используется отдельно)."""
     attach_screenshot(context, step, always=False)

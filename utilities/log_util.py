@@ -3,7 +3,6 @@ import logging
 from datetime import datetime
 import time
 
-
 class Logger():
 
     def __init__(self, logger, file_level=logging.INFO):
@@ -13,10 +12,9 @@ class Logger():
         fmt = logging.Formatter('%(asctime)s - %(filename)s:[%(lineno)s] - [%(levelname)s] - %(message)s')
 
         curr_time = time.strftime("%Y-%m-%d")
-        BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Directory where configReader.py is located
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Directory where config_reader.py is located
         LOG_PATH = os.path.join(BASE_DIR, "..", "logs", "log")  # Navigate to conf.ini
 
-        #self.LogFileName = 'Logs\\log' + curr_time + '.txt'
         self.LogFileName = f"{LOG_PATH}.{curr_time}.txt"
         # "a" to append the logs in same file, "w" to generate new logs and delete old one
         fh = logging.FileHandler(self.LogFileName, mode="a")

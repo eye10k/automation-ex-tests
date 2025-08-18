@@ -53,17 +53,12 @@ def test_register_user():
     with allure.step("Log fetched email from GET"):
         allure.attach(fetched_email, name="Fetched Email", attachment_type=allure.attachment_type.TEXT)
 
-
 def test_get_brands_list():
     url = "https://automationexercise.com/api/brandsList"
     response = requests.get(url)
     assert response.status_code == 200
     brands = response.json()["brands"]
     print("Available brands:", [b["brand"] for b in brands])
-
-
-
-
 
 def test_update_brand_list_negative():
     url = "https://automationexercise.com/api/brandsList"

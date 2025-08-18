@@ -2,14 +2,14 @@ import os
 from configparser import ConfigParser
 import logging
 
-# Настройка логгера
+# Configuring the logger
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 def readConfig(section, key):
     config = ConfigParser()
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    CONFIG_PATH = os.path.join(BASE_DIR, "..", "ConfigurationData", "conf.ini")
+    CONFIG_PATH = os.path.join(BASE_DIR, "..", "configuration_data", "conf.ini")
 
     if not os.path.exists(CONFIG_PATH):
         logger.error(f"Configuration file not found at: {CONFIG_PATH}")
@@ -27,3 +27,7 @@ def readConfig(section, key):
     value = config.get(section, key)
     logger.info(f"Read config: [{section}] {key} = {value}")
     return value
+
+
+BASE_URL = readConfig("basic info", "testsiteurl").rstrip("/")
+API_BASE_URL = f"{BASE_URL}/api"

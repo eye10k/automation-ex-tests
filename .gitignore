@@ -8,3 +8,4 @@ allure-results-bdd/
 artifacts/
 har_logs/
 logs/
+pretty.output

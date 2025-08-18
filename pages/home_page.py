@@ -1,6 +1,4 @@
 from pages.base_page import BasePage
-from utilities import configReader
-
 
 class HomePage(BasePage):
     home_navigation_menu_CSS = '.navbar-nav a[href="/"]'
@@ -12,7 +10,7 @@ class HomePage(BasePage):
         super().__init__(page)
 
     def navigate_to_home(self):
-        self.page.goto(configReader.readConfig("basic info", "testsiteurl"))
+        self.open("")
         self.accept_cookies()
 
     def accept_cookies(self):
