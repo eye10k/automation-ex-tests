@@ -3,7 +3,7 @@ import allure
 import json
 from utilities.log_util import Logger
 from allure_commons.types import AttachmentType
-from utilities import config_reader
+from config.config import Config
 
 log = Logger(__name__, logging.INFO)
 
@@ -11,7 +11,7 @@ class BasePage:
 
     def __init__(self, page):
         self.page = page
-        self.base_url = config_reader.BASE_URL
+        self.base_url = Config.BASE_URL
 
     def open(self, path=""):
         """Открыть страницу по относительному пути"""

@@ -5,7 +5,6 @@ import allure
 from allure_commons.types import AttachmentType
 from utilities.log_util import Logger
 from playwright.sync_api import sync_playwright
-from hooks.test_app import initialize_home_page  # важно: создаёт context.home_page
 
 log = Logger(__name__, logging.INFO)
 
@@ -52,8 +51,6 @@ def before_scenario(context, scenario):
             pass
 
     context.page.on("console", _on_console)
-
-    initialize_home_page(context)
 
 def before_step(context, step):
     if not hasattr(context, "page"):

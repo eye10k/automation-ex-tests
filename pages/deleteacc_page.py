@@ -7,9 +7,9 @@ class DeleteAccPage(BasePage):
     def __init__(self, page):
         super().__init__(page)
 
-    def check_delete_message(self):
+    def check_delete_message(self, message):
         self.move_to(self.delete_account_msg_CSS)
-        assert self.get_text(self.delete_account_msg_CSS) == "Account Deleted!"
+        assert self.get_text(self.delete_account_msg_CSS) == message
 
     def click_continue(self):
         self.click(self.continue_btn_CSS)

@@ -71,40 +71,19 @@ def generate_user(email: str = None, for_ui: bool = False):
         "mobile_number": mobile,
     }
 
-# Старая сигнатура для обратной совместимости
 def generate_user_data(email: str):
     return generate_user(email=email, for_ui=False)
 
-def generate_payment_card(for_ui: bool = True) -> PaymentCard:
-    """
-    Генерирует случайные данные для платежной карты.
-    Для UI всегда возвращает объект PaymentCard.
-    """
-    holder_name = fake.name()
+def generate_payment_card(with_zero_prefix: bool = False) -> PaymentCard:
 
-    # Тестовые номера карт (Stripe/PayPal sandbox)
-    card_numbers = [
-        "4242424242424242",  # Visa
-        "4000056655665556",  # Visa (debit)
-        "5555555555554444",  # MasterCard
-        "5200828282828210"  # MasterCard (debit)
-    ]
-    card_number = fake.random_element(card_numbers)
+    expire_month = f"{fake.random_int(min=1, max=12):02d}" if with_zero_prefix else str(fake.random_int(min=1, max=12))
 
-    # Месяц/год карты
-    if for_ui:
-        expire_month = str(fake.random_int(min=1, max=12))  # для селекта UI
-    else:
-        expire_month = f"{fake.random_int(min=1, max=12):02d}"  # для API
-    expire_year = str(fake.random_int(min=2025, max=2035))
-
-    # CVC: 3 цифры
-    cvc = f"{fake.random_int(min=100, max=999)}"
+    expire_year = str(fake.random_int(min=2030, max=2035))
 
     return PaymentCard(
-        holder_name=holder_name,
-        card_number=card_number,
+        holder_name=fake.name(),
+        card_number=fake.credit_card_number(),
         expire_month=expire_month,
         expire_year=expire_year,
-        cvc=cvc
+        cvc=fake.credit_card_security_code()
     )

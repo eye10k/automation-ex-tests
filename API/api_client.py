@@ -1,10 +1,10 @@
 import requests
 import json
 import allure
-from utilities import config_reader
+from config.config import Config
 
 class ApiClient:
-    DEFAULT_BASE_URL = config_reader.API_BASE_URL
+    DEFAULT_BASE_URL = Config.API_BASE_URL
 
     def __init__(self, base_url=None):
         self.base_url = base_url or self.DEFAULT_BASE_URL

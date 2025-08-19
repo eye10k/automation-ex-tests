@@ -2,39 +2,37 @@
 Feature: Brand list management should reject unsupported operations # features/api_brand_update.feature:2
 
   Scenario: I attempt to update the brand list using an unsupported method  # features/api_brand_update.feature:4
-    When I try to update the brands list using an unsupported method        # features/steps/api_brand_update_steps.py:5
-    Then I should receive a method not allowed error                        # features/steps/api_brand_update_steps.py:11
+    When I try to update the brands list using an unsupported method        # features/steps/api_brand_update_steps.py:6
+    Then I should receive a method not allowed error                        # features/steps/api_brand_update_steps.py:12
 
 @api
 Feature: Registering a new user account via API # features/api_register.feature:2
 
   Scenario: I successfully register a new user through the API   # features/api_register.feature:4
-    Given I am a new visitor without an account                  # features/steps/api_register_steps.py:8
-    When I register with valid personal and contact details      # features/steps/api_register_steps.py:14
-    Then my account should be successfully registered            # features/steps/api_register_steps.py:27
-    And I should be able to retrieve my account details by email # features/steps/api_register_steps.py:36
+    Given I am a new visitor without an account                  # features/steps/api_register_steps.py:7
+    When I register with valid personal and contact details      # features/steps/api_register_steps.py:12
+    Then my account should be successfully registered            # features/steps/api_register_steps.py:18
+    And I should be able to retrieve my account details by email # features/steps/api_register_steps.py:26
 
 @ui
 Feature: Register and order as a new user # features/register.feature:2
 
-  Scenario: I register during checkout and successfully place an order       # features/register.feature:4
-    When I add products to my cart                                           # features/steps/ui_register_steps.py:17
-    And I go to my cart                                                      # features/steps/ui_register_steps.py:23
-    Then I should see my cart                                                # features/steps/ui_register_steps.py:29
-    When I proceed to checkout                                               # features/steps/ui_register_steps.py:36
-    And I choose to register a new account                                   # features/steps/ui_register_steps.py:42
-    And I sign up and create my account                                      # features/steps/ui_register_steps.py:48
-    Then I should see the message "ACCOUNT CREATED!"                         # features/steps/ui_register_steps.py:76
-    When I continue from the account created page                            # features/steps/ui_register_steps.py:83
-    Then I should be logged in as my user                                    # features/steps/ui_register_steps.py:89
-    When I go back to my cart                                                # features/steps/ui_register_steps.py:95
-    And I confirm the checkout                                               # features/steps/ui_register_steps.py:101
-    Then I should see my address and order details                           # features/steps/ui_register_steps.py:107
-    When I leave a comment and place my order                                # features/steps/ui_register_steps.py:114
-    And I provide my payment details                                         # features/steps/ui_register_steps.py:121
-    And I confirm the payment                                                # features/steps/ui_register_steps.py:135
-    Then I should see the message "Your order has been placed successfully!" # features/steps/ui_register_steps.py:141
-    When I delete my account                                                 # features/steps/ui_register_steps.py:148
-    Then I should see the message "ACCOUNT DELETED!"                         # features/steps/ui_register_steps.py:154
-    And I finish by clicking Continue                                        # features/steps/ui_register_steps.py:161
+  Scenario: I register during checkout and successfully place an order                  # features/register.feature:4
+    Given I navigate to the home page                                                   # features/steps/home_page_steps.py:5
+    When I add products to my cart                                                      # features/steps/home_page_steps.py:12
+    And I go to my cart                                                                 # features/steps/home_page_steps.py:17
+    Then I should see my cart                                                           # features/steps/cart_page_steps.py:5
+    When I proceed to checkout                                                          # features/steps/cart_page_steps.py:11
+    And I choose to register a new account                                              # features/steps/cart_page_steps.py:16
+    And I sign up and create my account                                                 # features/steps/login_page_steps.py:10
+    Then I should see the message "ACCOUNT CREATED!" and I am logged in                 # features/steps/acc_created_steps.py:5
+    When I go back to my cart                                                           # features/steps/home_page_steps.py:22
+    And I confirm the checkout                                                          # features/steps/cart_page_steps.py:21
+    Then I should see my address and order details                                      # features/steps/checkout_page_steps.py:5
+    When I leave a comment and place my order                                           # features/steps/checkout_page_steps.py:11
+    And I provide my payment details                                                    # features/steps/payment_page_steps.py:6
+    Then I should see success message "Congratulations! Your order has been confirmed!" # features/steps/payment_done_steps.py:5
+    When I delete my account                                                            # features/steps/payment_done_steps.py:11
+    Then I should see the message "Account Deleted!"                                    # features/steps/deleteacc_page_steps.py:5
+    And I finish by clicking Continue                                                   # features/steps/deleteacc_page_steps.py:11
 

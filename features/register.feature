@@ -2,6 +2,7 @@
 Feature: Register and order as a new user
 
   Scenario: I register during checkout and successfully place an order
+    Given I navigate to the home page
     When I add products to my cart
     And I go to my cart
     Then I should see my cart
@@ -18,8 +19,8 @@ Feature: Register and order as a new user
     When I leave a comment and place my order
     And I provide my payment details
 
-    Then I should see the message "Your order has been placed successfully!"
+    Then I should see success message "Congratulations! Your order has been confirmed!"
 
     When I delete my account
-    Then I should see the message "ACCOUNT DELETED!"
+    Then I should see the message "Account Deleted!"
     And I finish by clicking Continue

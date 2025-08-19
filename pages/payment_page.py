@@ -1,6 +1,7 @@
 from pages.base_page import BasePage
 import logging
 import allure
+import json
 from utilities.log_util import Logger
 
 log = Logger(__name__, logging.INFO)
@@ -18,6 +19,9 @@ class PaymentPage(BasePage):
 
     def fill_payment_form(self, PaymentCard):
         with allure.step("filling payment details"):
+            payment_card_dict = PaymentCard.__dict__
+            allure.attach(json.dumps(payment_card_dict, indent=2), name="Payment Card Details",
+                          attachment_type=allure.attachment_type.JSON)
             self.type(self.field_name_on_card_CSS, PaymentCard.holder_name)
             self.click(self.field_number_on_card_CSS)
             self.type(self.field_number_on_card_CSS, PaymentCard.card_number)
