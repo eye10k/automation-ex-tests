@@ -7,8 +7,8 @@ os.makedirs("screenshots", exist_ok=True)
 
 def attach_screenshot(context, step, always=False):
     """
-    Делает скриншот шага.
-    :param always: True — всегда, False — только при падении.
+    Takes a screenshot of the step.
+    :param always: True — always, False — only when falling.
     """
     if always or step.status == "failed":
         screenshot_path = f"screenshots/{datetime.now().strftime('%Y%m%d_%H%M%S')}_{step.name}.png"
@@ -16,5 +16,5 @@ def attach_screenshot(context, step, always=False):
         allure.attach.file(screenshot_path, name=f"Screenshot - {step.name}", attachment_type=AttachmentType.PNG)
 
 def attach_screenshot_if_failed(context, step):
-    """Скриншот только при падении (старый метод, на случай, если используется отдельно)."""
+    """Screenshot only when falling (old method, in case it is used separately)."""
     attach_screenshot(context, step, always=False)

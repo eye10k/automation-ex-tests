@@ -16,4 +16,3 @@ class LoginPage(BasePage):
 
     def click_Signup(self):
         self.click(self.signup_btn_CSS)
-

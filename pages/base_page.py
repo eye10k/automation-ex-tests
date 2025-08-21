@@ -14,7 +14,6 @@ class BasePage:
         self.base_url = Config.BASE_URL
 
     def open(self, path=""):
-        """Открыть страницу по относительному пути"""
         self.page.goto(f"{self.base_url}/{path.lstrip('/')}")
 
     def _attach_locator_info(self, locator, value=None):

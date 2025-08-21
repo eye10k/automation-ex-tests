@@ -1,5 +1,4 @@
 from behave import *
-import allure
 from API.api_client import ApiClient
 from utilities.api_assertions import verify_error_response
 

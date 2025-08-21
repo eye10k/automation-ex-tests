@@ -11,7 +11,7 @@ def generate_email(context):
 
 @when("I register with valid personal and contact details")
 def register_user(context):
-    client = ApiClient()  # <-- URL берется из конфига
+    client = ApiClient()
     payload = generate_user_data(context.email)
     context.response = client.send_post_request(endpoint="/createAccount", payload=payload, use_json=False)
 

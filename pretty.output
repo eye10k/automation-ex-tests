@@ -2,8 +2,8 @@
 Feature: Brand list management should reject unsupported operations # features/api_brand_update.feature:2
 
   Scenario: I attempt to update the brand list using an unsupported method  # features/api_brand_update.feature:4
-    When I try to update the brands list using an unsupported method        # features/steps/api_brand_update_steps.py:6
-    Then I should receive a method not allowed error                        # features/steps/api_brand_update_steps.py:12
+    When I try to update the brands list using an unsupported method        # features/steps/api_brand_update_steps.py:5
+    Then I should receive a method not allowed error                        # features/steps/api_brand_update_steps.py:11
 
 @api
 Feature: Registering a new user account via API # features/api_register.feature:2

@@ -11,13 +11,10 @@ def generate_user(email: str = None, for_ui: bool = False):
         length=12, special_chars=True, digits=True, upper_case=True, lower_case=True
     )
 
-    # День и месяц
     if for_ui:
-        # Для UI: числа без ведущего нуля (чтобы селект работал)
         birth_day = str(fake.random_int(min=1, max=28))
         birth_month = str(fake.random_int(min=1, max=12))
     else:
-        # Для API: формат с ведущим нулём
         birth_day = f"{fake.random_int(min=1, max=28):02d}"
         birth_month = f"{fake.random_int(min=1, max=12):02d}"
 
@@ -32,7 +29,7 @@ def generate_user(email: str = None, for_ui: bool = False):
     mobile = fake.phone_number()
 
     if for_ui:
-        # Вернём объект User для UI
+        # Return the User object for the UI
         return User(
             first_name,
             last_name,
@@ -50,7 +47,7 @@ def generate_user(email: str = None, for_ui: bool = False):
             mobile,
         )
 
-    # Вернём dict для API
+    # Return dict for API
     return {
         "name": first_name,
         "email": email or fake.email(),

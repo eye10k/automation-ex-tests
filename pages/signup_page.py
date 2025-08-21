@@ -40,4 +40,3 @@ class SignupPage(BasePage):
             self.type(self.mobile_field_CSS, User.mobile)
             self.click(self.create_account_btn_CSS)
             time.sleep(5)
-
